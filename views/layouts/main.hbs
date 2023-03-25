@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="index.css" type="text/css">
+</head>
+ {{{body}}}
+
+ {{!-- show user --}}
+ {{#if showUser }} 
+    
+    <h1><a style="margin: 600px;" href="/create">Them moi</a></h1>
+    <span> {{id}} </span>
+    <br>
+    <span> {{name}} </span>
+ {{/if}}
+
+
+{{!-- show CREATE USER --}}
+ {{#if showCreateUser}}
+ <nav class="navbar">
+
+     <!-- LOGO -->
+
+     <div class="logo">MUO</div>
+
+     <!-- NAVIGATION MENU -->
+
+     <ul class="nav-links">
+
+       <!-- USING CHECKBOX HACK -->
+
+
+
+
+
+       <!-- NAVIGATION MENUS -->
+
+       <div class="menu">
+
+        <li><a href="">List User</a></li>
+
+
+
+
+
+<li><a href="/">List SP</a></li>
+
+         <li><a href="/">Contact</a></li>
+
+       </div>
+
+     </ul>
+
+   </nav>
+    <form action="/create" method="POST">
+        <label for="">id</label>
+        <input type="text" name="id" id="">
+         <label for="">name</label>
+        <input type="text" name="name" id="">
+        <button  >create</button>
+    </form>
+    <script>
+       f
+    </script>
+
+ {{/if}}
+</html>
