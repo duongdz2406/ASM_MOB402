@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <style>
+    .social-link {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  border-radius: 50%;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background: #ddd;
+  text-decoration: none;
+  color: #555;
+}
+  </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+  <div class="container"><a href="#" class="navbar-brand d-flex align-items-center"> <i class="fa fa-snowflake-o fa-lg text-primary mr-2"></i><strong>Snowflake</strong></a>
+    <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+    <div id="navbarSupportedContent" class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+      <li class="nav-item active"><a href="/user/list" class="nav-link font-italic"> User </a></li>
+        <li class="nav-item active"><a href="/product/list" class="nav-link font-italic"> Product </a></li>
+        <li class="nav-item active"><a href="/logout" class="nav-link font-italic"> Log out </a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <form action="/user/add" method="POST" autocomplete="off">
+      <input type="hidden" name="id" value="{{user._id}}">
+     <div class="form-outline mb-4">
+              <label class="form-label" for="form1Example13">User Name</label>
+              <input type="text" id="name" class="form-control form-control-lg" name="name" value="{{user.name}}" />
+              
+            </div>
+  
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form1Example23">Email</label>
+              <input type="email" id="email" class="form-control form-control-lg" name="email" value="{{user.email}}"  />
+             
+            </div>
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form1Example23">Password</label>
+              <input type="password" id="pass" class="form-control form-control-lg" name="password" value="{{user.password}}" />
+              
+            </div>
+            
+  
+          
+              <!-- Checkbox -->
+              
+  
+            <!-- Submit button -->
+           
+
+
+  <button type="submit" class="btn btn-info">ADD</button>
+
+  </form>
+            <!-- Email input -->
+           
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
